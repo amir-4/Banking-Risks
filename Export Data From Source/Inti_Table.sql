@@ -1,0 +1,30 @@
+CREATE TABLE Banking_Data (
+    [Client ID] NVARCHAR(50) NOT NULL,
+    [Name] NVARCHAR(50) NOT NULL,
+    [Age] INT NOT NULL,
+    [Location ID] INT NOT NULL,
+    [Joined Bank] NVARCHAR(50) NOT NULL,
+    [Banking Contact] NVARCHAR(50) NOT NULL,
+    [Nationality] NVARCHAR(50) NOT NULL,
+    [Occupation] NVARCHAR(100) NOT NULL,
+    [Fee Structure] NVARCHAR(50) NOT NULL,
+    [Loyalty Classification] NVARCHAR(50) NOT NULL,
+    [Estimated Income] FLOAT NOT NULL,
+    [Superannuation Savings] FLOAT NOT NULL,
+    [Amount of Credit Cards] INT NOT NULL,
+    [Credit Card Balance] FLOAT NOT NULL,
+    [Bank Loans] FLOAT NOT NULL,
+    [Bank Deposits] FLOAT NOT NULL,
+    [Checking Accounts] FLOAT NOT NULL,
+    [Saving Accounts] FLOAT NOT NULL,
+    [Foreign Currency Accounts] FLOAT NOT NULL,
+    [Business Lending] FLOAT NOT NULL,
+    [Properties Owned] INT NOT NULL,
+    [Risk Weighting] INT NOT NULL,
+    [BRId] INT NOT NULL,
+    [GenderId] INT NOT NULL,
+    [IAId] INT NOT NULL,
+    
+    -- Consider adding a primary key
+    CONSTRAINT PK_Banking_Data PRIMARY KEY ([Client ID])
+);
