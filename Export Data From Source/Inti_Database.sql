@@ -1,0 +1,11 @@
+IF EXISTS(SELECT 1 FROM SYS.databases WHERE name = 'Banking_Risk')
+	BEGIN
+		ALTER DATABASE Banking_Risk SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+		DROP DATABASE Banking_Risk
+	END ;
+ GO
+
+CREATE DATABASE Banking_Risk
+GO
+
+USE Banking_Risk ;
